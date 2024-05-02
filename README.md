@@ -1,3 +1,9 @@
+## Source Code
+
+This code only leverages the "in game" window provided by Overwolf, as the others are not needed since the menu uses its own HUD renderer. You can find the main file [here](https://github.com/notrogan/overwolf/blob/main/ts/src/in_game/in_game.ts)
+
+* This is the only file that directly interfaces with the Overwolf HUD, however it does borrow assets (operators, icons) from other directories.
+
 ## Load as Unpacked Extension
 
 You can load the native version of this app "as is", without any build process. Open the `ts` directory in a code editor, and run `npm run build`. Then, under Overwolf's settings, choose Support tab and then Development options. Click the Load unpacked button and choose the "dist" folder.
