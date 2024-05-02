@@ -2,7 +2,11 @@
 
 This an imitation of the pre-2020 HUD used in Rainbow Six: Siege. The previous hud was based on flash, and was replaced by an Electron version following its deprecation. However, the old version looks much nicer than the new one, so it was recreated in Overwolf.
 
+### Overwolf Recreation
 ![alt text](https://github.com/notrogan/overwolf/blob/main/screenshot.png)
+
+### Original
+![alt text](https://github.com/notrogan/overwolf/blob/main/screenshot2.png)
 
 ## Source Code
 
