@@ -1,97 +1,25 @@
-**IMPORTANT: In order to use install this app, you need to be Whitelisted as a developer!
-(https://overwolf.github.io/docs/start/sdk-introduction#get-whitelisted-as-a-developer)**
+## Source Code
 
-# Sample - TS
-Example-ts is an example app, meant to be used as a reference for developers who are new to Overwolf.
-The app is meant to demonstrate some basic points and flows that are relevant when developing Overwolf apps:
+This code only leverages the "in game" window provided by Overwolf, as the others are not needed since the menu uses its own HUD renderer. You can find the main file [here](https://github.com/notrogan/overwolf/blob/main/ts/src/in_game/in_game.ts)
 
-- Auto-launch when a game starts.
-- Register to the overwolf.games.events API and receive real time events from the game.
-- Define a custom hotkey to be used in-game.
-- Communicate between the app windows according to our best practices.
+* This is the only file that directly interfaces with the Overwolf HUD, however it does borrow assets (operators, icons) from other directories.
 
+Overwolf sends constant game updates (if available) which serve as refresh points for applications. There is no manual pulling of data in the code as the Overwolf framework handles that for us.
 
-## Setting up
-In order to run the app, you must first complete several steps:
-1. Download and install [NodeJS](https://nodejs.org/).
-After installing, run the following commands in a terminal of your choice:
-```
-node -v
-npm -v
-```
-If they run successfully, proceed to the next steps.
+## Load as Unpacked Extension
 
-2. Download and install the [Overwolf desktop client](https://download.overwolf.com/install/Download).
+You can load the native version of this app "as is", without any build process. Open the `ts` directory in a code editor, and run `npm run build`. Then, under Overwolf's settings, choose Support tab and then Development options. Click the Load unpacked button and choose the "dist" folder.
 
-3. Download the repository as a zip file and extract it.
+* In order to load an app as "unpacked", you'll first have to be whitelisted as an Overwolf dev. More details on how to be whitelisted can be found [here](https://overwolf.github.io/docs/start/sdk-introduction#whitelist-as-a-developer)
+* To load the typescript version, first you should build it. More details on the readme page under the "ts" folder in this repo.
 
-4. In your terminal, run the following commands:
-```
-cd <insert path to your extracted 'ts' folder here>
-npm install
-npm run build
-```
+## Usage
 
-5. Open the Overwolf desktop client settings (by right-clicking the client and selecting
-"Support" or by clicking on the wrench icon in the dock and going to the "Support" tab).
+The application will open automatically provided that Overwolf is currently running. There is no indiciation that the app is running when you're in the menu, as Overwolf does not provide game events here.
 
-6. Click on "Development options".
-
-7. In the opened window, click on "Load unpacked extension" and select the `ts/dist/` folder.
-This will add the app to your dock.
-
-8. Click on the app's icon in your dock.
-
-## Building an .opk for distribution
-When you run run ```npm run build``` in your terminal, an .opk is created in releases/ directory
-
-## Changing the version number quickly
-We have included a webpack plugin that can change the .opk version quickly with just a command line argument. Simply add ```--env setVersion=1.0.1``` to your build command.
-Example:
-```
-npm run build --env setVersion=1.0.1
-```
-
-This will change the app version both in package.json and app's manifest.json
-
-## What will you find inside?
-
-### public/
-All of the static resources used by the app, like icons, images and CSS
-
-##### public/manifest.json
-This file defines all of the aspects of the app.
-Read all about Overwolf's manifest.json mechanism [here](https://overwolf.github.io/docs/api/manifest-json#welcome-to-the-manifestjson-file).
-In our manifest.json file, we have [```{ "start_window": "background" }```](https://overwolf.github.io/docs/api/manifest-json#start_window) defined.
-This sets our [background](###windows/background) window as the app's starting point.
-All of this app's windows' properties can be found under the [```windows```](https://overwolf.github.io/docs/api/manifest-json#window-data) object.
-Please refer to the [dev site](https://overwolf.github.io/docs/api/manifest-json#welcome-to-the-manifestjson-file) to learn more about each property.
-
-#### src/
-Source .html & .ts files for the app
-
-##### src/background/
-This directory contains files of the background window, which serves as the application's starting point and window orchestrator.
-The window's ```run()``` method detects whether a a supported game is currently running, decides which window to launch accordingly, and listens for changes.
-
-The background window has no visual representation, which can be gleaned from the empty background.html file or from the
-[```{ is_background_page: true }```](https://overwolf.github.io/docs/api/manifest-json#is_background_page)
-property the background window has in our manifest.json.
-
-##### src/in_game/
-The in_game window listens to [Info Events](https://overwolf.github.io/docs/api/overwolf-games-events#oninfoupdates2) and
-[Game Events](https://overwolf.github.io/docs/api/overwolf-games-events#onnewevents) emitted by the game and
-displays an ad. Furthermore, it defines the behavior for the show/hide hotkey.
-Read all about hotkeys [here](https://overwolf.github.io/docs/topics/hotkeys-best-practices).
-
-##### src/desktop/
-This window serves a purely visual purpose and has no special logic.
-
-##### src/AppWindow.js
-This is a base class that holds the logic shared by the in_game and desktop windows, such as minimize/close, drag, etc.
-
+* Pressing `ctrl-f` will obscure the hud, and pressing it again will reveal it.
+* Icons for new operators are not available, and are instead replaced with recruit. This is because they are drawn with a different style, which does not work with this version of the hud.
 
 ## Notes
-Editing the author or app name in the manifest will prevent loading the app as an unpacked app.
 
-For any further information or questions, contact developers@overwolf.com
+After each Rainbow Six: Siege update, Overwolf typically disables game events to ensure that they do not conflict with any changes made in the new update. You can find the current game event status [here](https://overwolf.github.io/status/rainbow-six-siege)
