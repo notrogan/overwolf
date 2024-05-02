@@ -6,6 +6,7 @@ This an imitation of the pre-2020 HUD used in Rainbow Six: Siege. The previous h
 
 ### Overwolf Recreation
 ![alt text](https://github.com/notrogan/overwolf/blob/main/screenshot.png)
+![alt text](https://github.com/notrogan/overwolf/blob/main/screenshot3.png)
 
 ### Original
 ![alt text](https://github.com/notrogan/overwolf/blob/main/screenshot2.png)
