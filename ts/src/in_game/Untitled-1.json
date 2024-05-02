@@ -1,0 +1,50 @@
+{
+    "gep_internal": {
+        "version_info": "{\"local_version\":\"241.2.0\",\"public_version\":\"241.2.0\",\"is_updated\":true}"
+    },
+    "game_info": {
+        "phase": "lobby"
+    },
+    "players": {
+        "roster_0": null,
+        "roster_1": null,
+        "roster_2": null,
+        "roster_3": null,
+        "roster_4": null,
+        "roster_5": null,
+        "roster_6": null,
+        "roster_7": null,
+        "roster_8": null,
+        "roster_9": null,
+        "roster_10": null, 
+        "roster_11": null
+    },
+    "player": {
+        "score": null,
+        "kills": null,
+        "deaths": null,
+        "health": null,
+        "team": null
+    },
+    "round": {
+        "number": null
+    },
+    "match_info": {
+        "pseudo_match_id": null,
+        "game_mode": "NONE",
+        "general_log": "{\"createdDate\":\"2023-12-08T01:42:04.236Z\",\"obj\":{},\"typeData\":{\"playtimeAbsolute\":2437863,\"playtimeRelative\":253,\"playtimeAppAbsolute\":4131},\"type\":\"player.stats.playtime\",\"absolutePlaytime\":2437863,\"relativePlaytime\":253,\"seqId\":61,\"contexts\":[0]}",
+        "match_start_log": "{\"MAP\":\"0000000031E6DF85\",\"STARTREASON\":\"Menu\",\"DIFF\":\"00000000CDE271EC\",\"MMID\":\"1\",\"PARTY\":1,\"SQUADID\":\"0\",\"TEAM\":\"0\",\"SKILLRANK\":0,\"MTYPE\":\"00000058CAAFCAE8\",\"GAMEMODEALTERATION\":\"normal\",\"playlist\":\"0000005E2386A817\",\"MMKPREF\":[{\"Bots preferences\":[\"Matchmaking:OFF\",\"GameplayProfile:BotsGameplayProfileMode_Beginner\"]}]}",
+        "match_id": null,
+        "move_log": "{\"MAP\":\"0000000031E6DF85\",\"TEAM\":\"0\",\"POSTURE\":\"Standing\",\"PAWNCONTEXT\":\"GroundNav\",\"MOVETYPE\":\"Idle\",\"CLASS\":\"00000037802D16D4\",\"CTU\":\"0000000019438628\",\"ROLE\":\"Attacker\",\"WEAPON\":\"00000037802CC868\",\"ISINCAMERA\":false,\"X\":-75.506111,\"Y\":48.035404,\"Z\":0.454171,\"ROOMID\":190126}",
+        "map_id": null,
+        "round_outcome_type": null,
+        "round_start_log": null,
+        "score_log": "{\"MAP\":\"0000000031E6DF85\",\"TEAM\":\"0\",\"CLASS\":\"00000037802D16D4\",\"CTU\":\"0000000019438628\",\"ROLE\":\"Attacker\",\"SCORENAME\":\"0000000118B0090E\",\"AMOUNT\":10,\"MULTIPLIER\":100}",
+        "round_end_log": "{\"MAP\":\"0000000031E6DF85\",\"OBJVAR\":\"N/A\",\"ENDROUNDREASON\":\"AbandonGame\",\"WINROLE\":\"N/A\",\"LOCCHOSEN\":\"0000000019438607\",\"SURVATTACK\":1,\"SURVDEF\":5,\"GAMEPHASEJIP\":\"Invalid\",\"ROUNDWON\":\"other\",\"TEAM\":\"0\",\"CLASS\":\"00000037802D16D4\",\"CTU\":\"0000000019438628\",\"ROLE\":\"Attacker\",\"CLLEVEL\":142,\"MARKALIVE\":0,\"MARKSUPPORT\":0,\"MARKTOTAL\":0,\"PING\":0,\"TIMEALIVE\":11942,\"TIMEDEAD\":0,\"NUMKILLS\":0,\"NUMTEAMKILLS\":0,\"CONTROLLER\":\"mouse-keyboard\",\"KEYBOARDANDMOUSEPRESENT\":true,\"RANDOMPICKED\":0,\"NUMDEFENTERWZONE\":0,\"NUMDEFKILLEDWZONE\":0,\"NUMATTKILLEDWZONE\":0,\"WINTEAM\":\"Default (Not Set)\",\"PLAYERSCORE\":20,\"ESCATTEMPTS\":0,\"DBNOHOSTAGE\":0,\"DEFUSERPLANTED\":0,\"BOMBDISARMED\":0,\"OBJSECSTARTED\":0,\"NUMASSISTS\":0,\"MINPING\":4294967295,\"MAXPING\":0,\"AVGPING\":0,\"STDEVPING\":0,\"CNTPING\":0,\"DCENTER\":\"lan\",\"AVGFPS\":81.0,\"MINFPS\":64.0,\"MAXFPS\":91.0,\"CNTFPS\":11,\"STDEVFPS\":8.4,\"TTPACTIVE\":2437814,\"TTPPVP\":2065725,\"TTPPVE\":140152,\"NBMSGSENT\":0,\"NBMSGCENSOR\":0}",
+        "game_mode_log": null,
+        "match_end_log": "{\"MAP\":\"0000000031E6DF85\",\"ENDREASON\":\"AbandonGame\",\"ROUNDSPLAYED\":1,\"ISJIP\":false,\"PARTY\":1,\"MATCHWON\":\"other\",\"DATACENTER\":\"lan\",\"LEAVEREASON\":14,\"WIRELESS\":false,\"TEAM\":\"0\",\"WINTEAM\":\"Default (Not Set)\",\"PLAYERSCORE\":0,\"VSETTING\":\"PushToTalk\",\"VNUM\":0,\"SKILLRANK\":0,\"AlphaPackDropRate\":1500,\"AlphaPackDropIncrease\":0,\"AlphaPackHasDropped\":false,\"MULTIPLIER\":100,\"MTYPE\":\"00000058CAAFCAE8\"}"
+    },
+    "me": {
+        "account_id_log": "{\"content\":{\"partyId\":\"3eac7863-bbdc-44a0-9a9d-c4438a2236b1\",\"groupId\":\"0cdf503d-81fc-4c00-b4a3-7d44b2cb54de\",\"profileId\":\"8a609d21-1688-4ebf-9cb8-5115bc85a53a\",\"obj\":{\"is_caster\":false,\"party_bans\":\"[]\",\"reservations\":\"[]\",\"clearance_level\":142,\"two_factor_auth_enabled\":true,\"phone_number_verified\":true,\"rank\":0,\"rank_points\":1000,\"top_rank_pos\":0,\"rank_mmr\":0,\"last_hosted_rdv_session_id\":\"3eac7863-bbdc-44a0-9a9d-c4438a2236b1\",\"online_player_id\":\"6749646280903572914\",\"in_anti_addiction_state\":false,\"nickname\":\"seaotta\",\"nickname_enabled\":false,\"is_using_invalid_graphic_settings\":false,\"has_failed_binary_validation\":false,\"avatar_hidden\":false,\"has_commend_streak\":false,\"commend_streaks_hidden\":false,\"must_complete_tutorials\":false,\"must_complete_bots_match\":false},\"lastModifiedAt\":\"2023-12-08T01:31:01.931Z\"},\"notificationType\":\"PARTY_MEMBER_UPDATED\",\"spaceId\":\"0d2ae42d-4c27-4cb7-af6c-2099062302bb\",\"sourceApplicationId\":\"e3c65a29-d3c9-4a5a-bfb4-1aeb21bc0685\",\"datePosted\":\"2023-12-08T01:31:01.984Z\"}"
+    }
+}
