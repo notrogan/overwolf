@@ -4,6 +4,8 @@ This code only leverages the "in game" window provided by Overwolf, as the other
 
 * This is the only file that directly interfaces with the Overwolf HUD, however it does borrow assets (operators, icons) from other directories.
 
+Overwolf sends constant game updates (if available) which serve as refresh points for applications. There is no manual pulling of data in the code as the Overwolf framework handles that for us.
+
 ## Load as Unpacked Extension
 
 You can load the native version of this app "as is", without any build process. Open the `ts` directory in a code editor, and run `npm run build`. Then, under Overwolf's settings, choose Support tab and then Development options. Click the Load unpacked button and choose the "dist" folder.
@@ -15,8 +17,9 @@ You can load the native version of this app "as is", without any build process. 
 
 The application will open automatically provided that Overwolf is currently running. There is no indiciation that the app is running when you're in the menu, as Overwolf does not provide game events here.
 
+* Pressing `ctrl-f` will obscure the hud, and pressing it again will reveal it.
+* Icons for new operators are not available, and are instead replaced with recruit. This is because they are drawn with a different style, which does not work with this version of the hud.
+
 ## Notes
 
 After each Rainbow Six: Siege update, Overwolf typically disables game events to ensure that they do not conflict with any changes made in the new update. You can find the current game event status [here](https://overwolf.github.io/status/rainbow-six-siege)
-
-For any further information or questions, contact developers@overwolf.com
